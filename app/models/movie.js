@@ -9,7 +9,7 @@ module.exports = (sequelize,  Sequlize) => {
         typeOfMovies: {
             type: Sequlize.STRING
         },
-        yearOfMovies: {
+        rangeOfMovies: {
             type: Sequlize.STRING
         }
 
