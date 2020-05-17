@@ -8,6 +8,13 @@ app.use(cors);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
+const db = require("./app/models")
+db.sequelize.sync();
+
+app.get("/", (req, res) => {
+    res.json({ message: "Welcome to movie app" });
+  });
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`running on port ${PORT}`)
