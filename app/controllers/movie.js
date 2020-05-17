@@ -18,4 +18,19 @@ exports.saveUserMovie = (req, res) => {
         typeMovies: req.body.typeMovies,
         rangeYearOfMovies: req.body.rangeYearOfMovies        
     }
-}
+
+    Movie.create(userMovie).
+        then(data => {
+            res.send(data)
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message
+            });
+        })
+    }
+
+    export.
+
+
