@@ -28,9 +28,19 @@ exports.saveUserMovie = (req, res) => {
                 message:
                     err.message
             });
-        })
-    }
+        });
+    };
 
-    export.
+    exports.findAll = (req, res) => {
+         Movie.findAll()
+         .then(data => {
+             res.send(data);
+         })
+         .catch(err => {
+             res.status(500).send( {
+                 message: err.message
+             })
+         });
+    };
 
 
