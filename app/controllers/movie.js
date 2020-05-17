@@ -4,6 +4,7 @@ const Movie = db.movie;
 
 
 exports.saveUserMovie = (req, res) => {
+    console.log("testing ...");
     if (!req.body) {
         res.status(400).send({
             message: "can no be empty!"
@@ -31,7 +32,8 @@ exports.saveUserMovie = (req, res) => {
     };
 
     exports.findAll = (req, res) => {
-        console.log("testing");
+        console.log("testing ...");
+        
          Movie.findAll()
          .then(data => {
              res.send(data);
