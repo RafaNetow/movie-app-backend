@@ -1,5 +1,10 @@
 module.exports = (sequelize,  Sequlize) => {
     const userMovie = sequelize.define("userMovie", {
+        id: {
+            type: Sequelize.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
+        },
         email: {
             type: Sequlize.STRING
         },
