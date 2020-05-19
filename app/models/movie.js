@@ -1,4 +1,4 @@
-module.exports = (sequelize,  Sequlize) => {
+module.exports = (sequelize,  Sequelize) => {
     const userMovie = sequelize.define("userMovie", {
         id: {
             type: Sequelize.INTEGER,
@@ -6,16 +6,13 @@ module.exports = (sequelize,  Sequlize) => {
             primaryKey: true
         },
         email: {
-            type: Sequlize.STRING
-        },
-        auth0Id: {
-            type: Sequlize.STRING
+            type: Sequelize.STRING
         },
         typeOfMovies: {
-            type: Sequlize.STRING
+            type: Sequelize.STRING
         },
         rangeOfMovies: {
-            type: Sequlize.STRING
+            type: Sequelize.STRING
         }
 
     });

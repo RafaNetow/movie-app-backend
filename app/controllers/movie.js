@@ -11,11 +11,12 @@ exports.saveUserMovie = (req, res) => {
         });
         return;
     }
+    console.log(req)
 
     const userMovie = {
         email: req.body.email,
         description: req.body.auth,
-        typeMovies: req.body.typeMovies,
+        typeOfMovies: req.body.typeOfMovies,
         rangeYearOfMovies: req.body.rangeYearOfMovies        
     }
 
