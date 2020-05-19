@@ -4,7 +4,7 @@ const cors = require ("cors");
 
 const app = express ();
 let corsOptions = {
-    origin: "http://localhost:8081"
+    origin: "https://localhost:3000"
   };
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
