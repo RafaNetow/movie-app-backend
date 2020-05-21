@@ -1,8 +1,8 @@
 module.exports =  {
-    HOST: "localhost" ,
-    USER: "postgres", 
-    PASSWORD: "admin123",
-    DB: "postgres",
+    HOST: "salt.db.elephantsql.com(salt-01)" ,
+    USER: "uhmanyeh", 
+    PASSWORD: "jyWN7y4tjWMidQOuwrWmYjewroTClrcg",
+    DB: "uhmanyeh",
     dialect: "postgres",
     pool: {
         max: 5,
