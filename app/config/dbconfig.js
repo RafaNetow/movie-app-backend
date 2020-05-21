@@ -1,5 +1,5 @@
 module.exports =  {
-    HOST: "salt.db.elephantsql.com(salt-01)" ,
+    HOST: "salt.db.elephantsql.com" ,
     USER: "uhmanyeh", 
     PASSWORD: "jyWN7y4tjWMidQOuwrWmYjewroTClrcg",
     DB: "uhmanyeh",
