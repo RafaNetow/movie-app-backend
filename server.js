@@ -9,7 +9,7 @@ let corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
-
+//
 const db = require("./app/models")
 db.sequelize.sync();
 
